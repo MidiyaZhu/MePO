@@ -1,22 +1,22 @@
 
-ROOTPATH = "YOUR_PATH"  # 修改为你的实际路径
+ROOTPATH = "YOUR_PATH" 
 
-import PattoPO_train_dpo
+import MePO_train_dpo
 
 
-# 训练参数
+
 MAXLEN = 2048
 EPOCH =3
 ISLORA = 1
 SETTING = "sigmoid"
 BETA = 0.01
 
-models = ["PattoPO_optimizer"]
+models = ["MePO_optimizer"]
 
 for model in models:
 
     raw_model_path = f"/cache/transformers/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/"
-    train_data_path = f"./data/PattoPo_Prompt_Preference_Dataset.jsonl"
+    train_data_path =load_dataset("zixiaozhu/MePO")
 
 
     model_output_path = f"./{model}_{SETTING}_peft/"
@@ -26,7 +26,7 @@ for model in models:
     GRA_ACC = 4
 
 
-    # **调用 train_dpo.py**
+
     args = [
         "--model_name_or_path", raw_model_path,
         "--bf16", "True",
@@ -54,10 +54,10 @@ for model in models:
         "--loss_type", SETTING
     ]
 
-    PattoPO_train_dpo.main(args)
+    MePO_train_dpo.main(args)
 
 
-    from PattoPO_merge_peft_adapter import main as merge_main
+    from MePO_merge_peft_adapter import main as merge_main
     merge_args = [
         "--adapter_model_name", model_output_path,
         "--base_model_name", raw_model_path,
