@@ -22,7 +22,7 @@ from peft import (
     LoraConfig
 )
 from peft.tuners.lora import LoraLayer
-from PattoPO_dpo_trainer_nodp import DPOTrainer
+from MePO_dpo_trainer_nodp import DPOTrainer
 from flash_attn_patch import replace_llama_attn_with_flash_attn
 import numpy as np
 import tqdm
@@ -141,8 +141,8 @@ class SaveModelCallback(TrainerCallback):
         save_path = f"{self.save_directory}/checkpoint-epoch-{int(epoch)}"
         print(f"🔹 Saving model at: {save_path}")
 
-        self.trainer.save_model(save_path)  # 保存模型
-        self.trainer.state.save_to_json(f"{save_path}/trainer_state.json")  # 保存训练状态
+        self.trainer.save_model(save_path)  
+        self.trainer.state.save_to_json(f"{save_path}/trainer_state.json") 
 
         print(f"✅ Model saved at {save_path}")
 
@@ -218,7 +218,7 @@ def main(args=None):
     config.use_cache = False
 
 
-    # 加载模型
+
     model = AutoModelForCausalLM.from_pretrained(model_args.model_name_or_path, load_in_8bit=True,  device_map="auto")
 
 
@@ -286,7 +286,7 @@ def main(args=None):
     # Training
     print(f"Before training: {type(trainer.model)}")
     train_result = trainer.train()
-    print(f"After training: {type(trainer.model)}")  # 🛑 这里如果变了，说明 `train()` 里 model 被改了
+    print(f"After training: {type(trainer.model)}")  
 
     trainer.save_state()
     
