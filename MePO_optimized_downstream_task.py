@@ -180,7 +180,7 @@ def read_json(file_path):
     return data
 
 
-with open("./qwen_prompt_ins3.txt", "r",
+with open("./data/optimize_prompt_instruction.txt", "r",
           encoding="utf-8") as file:
     po_prompt_ins = file.read()
 
