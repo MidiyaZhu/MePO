@@ -1,7 +1,20 @@
-# MePO
-In this work, we introduce **MePO**, a lightweight, locally deployable prompt optimization model trained under a pattern-guided preference framework. 
+# 🚀 MePO: Merit-Guided Prompt Optimization
 
-The dataset can be found in [zixiaozhu/MePO](https://huggingface.co/datasets/zixiaozhu/MePO/tree/main) and model will be released in huggingface soon.
+We introduce **MePO**, a lightweight and locally deployable prompt optimization model trained under a **pattern-guided preference framework**. MePO is designed to optimize prompts effectively for downstream use in small language models.
+
+## 📚 Dataset
+
+The dataset used for training and evaluation can be found at [**zixiaozhu/MePO**](https://huggingface.co/datasets/zixiaozhu/MePO/tree/main), with two subsets:
+
+- [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) — Optimized prompts based on the BPO dataset  
+- [**MePO_Alpaca**](https://huggingface.co/datasets/zixiaozhu/MePO_Alpaca) — Optimized prompts based on the Alpaca dataset
+
+The MePO model will be released on Hugging Face soon.
+
+> 📌 **Recommendation:**  
+Based on our empirical results, we recommend using [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) for training prompt optimizers targeting **lightweight LLMs (<7B)**, especially in chatbot-style prompt optimization tasks.
+
+## 📄 Citation
 
 If you use our code, dataset, or model, please cite our paper:
 
