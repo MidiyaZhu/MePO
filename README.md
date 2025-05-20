@@ -11,6 +11,14 @@ The dataset used for training and evaluation can be found at [**zixiaozhu/MePO**
 
 The MePO model will be released on Hugging Face soon.
 
+## 🛠️ Training
+
+To train your own prompt optimization model using MePO, simply run with downloaded dataset in your correct folder path:
+
+```bash
+python MePO_run_train.py
+```
+
 > 📌 **Recommendation:**  
 Based on our empirical results, we recommend using [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) for training prompt optimizers targeting **lightweight LLMs (<7B)**, especially in chatbot-style prompt optimization tasks.
 
