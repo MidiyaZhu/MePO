@@ -14,8 +14,10 @@ The MePO model will be released on Hugging Face soon.
 ## 🛠️ Implementation
 
 To train your own prompt optimization model using MePO, simply run with downloaded dataset in your correct folder path:
-
 ```bash
+pip install -r requirements.txt
+
+
 python MePO_run_train.py
 ```
 > 📌 **Recommendation:**  
