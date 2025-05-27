@@ -187,7 +187,7 @@ with open("./data/optimize_prompt_instruction.txt", "r",
 
 print("Loading PO model...")
 
-po_model_path = "./model" #load your model or from huggingface
+po_model_path = "zixiaozhu/MePO" #load your model or from huggingface
 
 model2, tokenizer2 = load_model_and_tokenizer(po_model_path)
 
