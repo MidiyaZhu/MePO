@@ -4,12 +4,14 @@ We introduce **MePO**, a lightweight and locally deployable prompt optimization 
 
 ## 📚 Dataset
 
-The dataset used for training and evaluation can be found at [**zixiaozhu/MePO**](https://huggingface.co/datasets/zixiaozhu/MePO/tree/main), with two subsets:
+The dataset used for training and evaluation is available on Hugging Face:
 
+- [**MePO**](https://huggingface.co/datasets/zixiaozhu/MePO)  
 - [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) — Optimized prompts based on the BPO dataset  
 - [**MePO_Alpaca**](https://huggingface.co/datasets/zixiaozhu/MePO_Alpaca) — Optimized prompts based on the Alpaca dataset
 
-The MePO model will be released on Hugging Face soon.
+## The MePO model is available at:  
+[**zixiaozhu/MePO**](https://huggingface.co/zixiaozhu/MePO)
 
 ## 🛠️ Implementation
 
