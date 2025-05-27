@@ -1,6 +1,6 @@
 # 🚀 MePO: Merit-Guided Prompt Optimization
 
-We introduce **MePO**, a lightweight and locally deployable prompt optimization model trained under a **pattern-guided preference framework**. MePO is designed to optimize prompts effectively for downstream use in small language models.
+We introduce **MePO**, a lightweight and locally deployable prompt optimization model trained under a **merits-guided preference framework**. MePO is designed to optimize prompts effectively for downstream use in small language models.
 
 ## 📚 Dataset
 
