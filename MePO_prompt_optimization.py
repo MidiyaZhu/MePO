@@ -41,7 +41,7 @@ with open("./data/optimize_prompt_instrution.txt", "r",
 
 print("Loading PO model...")
 
-po_model_path = "./model/"
+po_model_path = "zixiaozhu/MePO"
 
 model2, tokenizer2 = load_model_and_tokenizer(po_model_path)
 
