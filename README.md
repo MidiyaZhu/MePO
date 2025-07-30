@@ -25,12 +25,12 @@ python MePO_run_train.py
 > 📌 **Recommendation:**  
 Based on our empirical results, we recommend using [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) for training prompt optimizers targeting **lightweight LLMs (<7B)**, especially in chatbot-style prompt optimization tasks.
 
-For chatbot-style testing demonstration:
+### **For chatbot-style testing demonstration:**
 ```bash
 MePO_prompt_optimization.py
 ```
 
-For downstream tasks optimization prompt generation:
+### **For downstream tasks optimization prompt generation:**
 ```bash
 MePO_optimized_downstream_task.py
 ```
