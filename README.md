@@ -10,7 +10,7 @@ The dataset used for training and evaluation is available on Hugging Face:
 - [**MePO_BPO**](https://huggingface.co/datasets/zixiaozhu/MePO_BPO) — Optimized prompts based on the BPO dataset  
 - [**MePO_Alpaca**](https://huggingface.co/datasets/zixiaozhu/MePO_Alpaca) — Optimized prompts based on the Alpaca dataset
 
-## The MePO model is available at:  
+## 📚 Model:  
 [**zixiaozhu/MePO**](https://huggingface.co/zixiaozhu/MePO)
 
 ## 🛠️ Implementation
