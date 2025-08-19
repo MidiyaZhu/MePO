@@ -32,7 +32,16 @@ MePO_prompt_optimization.py
 
 ### **For downstream tasks optimization prompt generation:**
 ```bash
-MePO_optimized_downstream_task.py
+MePO_optimized_downstream_task.py  (gsm8k,bbh,arc-c,arc-e,piqa)
+
+('selfeval', 'BPO_test', 'vicuna')
+cd ./instruction-following
+
+Inference_downstream_instrucionfollowing.py (po is mepo prompt, raw is original prompt from HuggingFace dataset)
+
+evaluation_instruction_score_deepseek.py (Scoring)
+
+evaluation_instruction_winrate.py (Winrate Comparison)
 ```
 
 ## 📄 Citation
