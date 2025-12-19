@@ -2,6 +2,9 @@
 
 We introduce **MePO**, a lightweight and locally deployable prompt optimization model trained under a **merits-guided preference framework**. MePO is designed to optimize prompts effectively for downstream use in small language models.
 
+Real-time application video:
+https://youtu.be/mDQtaJEKB2o
+
 ## 📚 Dataset
 
 The dataset used for training and evaluation is available on Hugging Face:
