@@ -1,4 +1,4 @@
-# 🚀 MePO: Merit-Guided Prompt Optimization
+# 🚀 MePO: Merit-Guided Prompt Optimization （EACL 2026 Main Paper)
 
 We introduce **MePO**, a lightweight and locally deployable prompt optimization model trained under a **merits-guided preference framework**. MePO is designed to optimize prompts effectively for downstream use in small language models.
 
@@ -49,7 +49,7 @@ evaluation_instruction_winrate.py (Winrate Comparison)
 
 ## 📄 Citation
 
-If you use our code, dataset, or model, please cite our paper:
+If you use our code, dataset, or model, please cite our paper (accept as **EACL 2026 Main**):
 
 ```bibtex
 @misc{zhu2025rethinkingpromptoptimizersprompt,
